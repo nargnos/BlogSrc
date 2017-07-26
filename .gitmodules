@@ -4,3 +4,6 @@
 [submodule "source/_posts"]
 	path = source/_posts
 	url = https://github.com/nargnos/BlogContent.git
+[submodule "public"]
+	path = public
+	url = https://github.com/nargnos/nargnos.github.io.git
