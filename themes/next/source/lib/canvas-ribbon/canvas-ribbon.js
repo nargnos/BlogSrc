@@ -1,60 +1,6 @@
 /**
- * Created by zproo on 2017/4/3.
- */
-! function() {
-  document.addEventListener("touchstart", (e) => {
-    targetA = true;
-  });
-  document.addEventListener("touchmove", (e) => {
-    targetA = false
-  })
-  document.addEventListener("click", (e) => {
-    targetA = true
-  })
-  function e() {
-    if (targetA) {
-      for (a.clearRect(0, 0, d, r), i = [{
-        x: 0,
-        y: .7 * r + u
-      }, {
-        x: 0,
-        y: .7 * r - u
-      }]; i[1].x < d + u;) t(i[0], i[1])
-      targetA = false
-    }
-  }
-
-  function t(e, t) {
-    a.beginPath(), a.moveTo(e.x, e.y), a.lineTo(t.x, t.y);
-    var o = t.x + (2 * x() - .25) * u,
-      c = n(t.y);
-    a.lineTo(o, c), a.closePath(), h -= m / -50, a.fillStyle = "#" + (127 * s(h) + 128 << 16 | 127 * s(h + m / 3) + 128 << 8 | 127 * s(h + m / 3 * 2) + 128).toString(16), a.fill(), i[0] = i[1], i[1] = {
-      x: o,
-      y: c
-    }
-  }
-
-  function n(e) {
-    var t = e + (2 * x() - 1.1) * u;
-    return t > r || 0 > t ? n(e) : t
-  }
-
-  var o = document.createElement("canvas");
-  o.style.cssText = "position:fixed;top:0;left:0;z-index:-1", document.getElementsByTagName("body")[0].appendChild(o);
-  var i, c = o,
-    a = c.getContext("2d"),
-    l = window.devicePixelRatio || 1,
-    d = window.innerWidth,
-    r = window.innerHeight,
-    u = 90,
-    f = Math,
-    h = 0,
-    m = 2 * f.PI,
-    s = f.cos,
-    x = f.random,
-    targetA = false;
-  c.width = d * l, c.height = r * l, a.scale(l, l), a.globalAlpha = .6, document.onclick = e, document.ontouchend = e, setTimeout(function() {
-    targetA = true;
-    e();
-  }, 100);
-}();
+*Createdbyzprooon2017/4/8.
+*/
+!function(){
+    function a(a, b, c) { return Number(a.getAttribute(b)) || c } function p() { for (e.clearRect(0, 0, g, h), j = [{ x: 0, y: .7 * h + i }, { x: 0, y: .7 * h - i }]; j[1].x < g + i;)q(j[0], j[1]) } function q(a, b) { e.beginPath(), e.moveTo(a.x, a.y), e.lineTo(b.x, b.y); var c = b.x + (2 * o() - .25) * i, d = r(b.y); e.lineTo(c, d), e.closePath(), l -= m / -50, e.fillStyle = "#" + ((127 * n(l) + 128 << 16) | (127 * n(l + m / 3) + 128 << 8) | (127 * n(l + m / 3 * 2) + 128)).toString(16), e.fill(), j[0] = j[1], j[1] = { x: c, y: d } } function r(a) { var b = a + (2 * o() - 1.1) * i; return b > h || 0 > b ? r(a) : b } var b, c, j, d, e, f, g, h, i, k, l, m, n, o, z; b = document.getElementById("ribbon"), config = { zindex: a(b, "zIndex", -1), alpha: a(b, "alpha", .6), ribbon_width: a(b, "size", 90) }, c = document.createElement("canvas"), c.style.cssText = "opacity:0;position:absolute;top:0;left:0;z-index:" + config.zindex, document.getElementsByTagName("body")[0].appendChild(c), d = c, e = d.getContext("2d"), f = window.devicePixelRatio || 1, g = document.body.clientWidth, h = 150, i = config.ribbon_width, k = Math, l = 3.6 + (8.8 - 3.6) * k.random(), m = 2 * k.PI, n = k.cos, z = k.abs, o = k.random, d.width = g, d.height = h, e.scale(f, f), e.globalAlpha = config.alpha, p(), $('canvas').css("opacity",1);var rt=null;$(window).resize(function(){if(rt==null){rt=setTimeout(function(){g=document.body.clientWidth;d.width=g;e.globalAlpha=config.alpha;p();rt=null;},200);}
+})}();

@@ -77,9 +77,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
+# scheme: Muse
 scheme: Mist
-#scheme: Pisces
+# scheme: Pisces
 #scheme: Gemini
 
 
@@ -261,7 +261,7 @@ highlight_theme: normal
 # - Introduce in 5.0.1
 # ---------------------------------------------------------------
 font:
-  enable: true
+  enable: false
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
   host:
@@ -563,7 +563,7 @@ pace: true
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: true
+canvas_nest: false
 
 # three_waves
 three_waves: false
@@ -576,7 +576,7 @@ canvas_sphere: false
 
 # Only fit scheme Pisces
 # Canvas-ribbon
-canvas_ribbon: false
+canvas_ribbon: true
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
@@ -654,7 +654,7 @@ vendors:
 
   # Internal version: 1.0.0
   # https://github.com/zproo/canvas-ribbon
-  canvas_ribbon:
+  canvas_ribbon: /lib/canvas-ribbon/canvas-ribbon.js" id="ribbon" size="100" alpha='0.6' zIndex="-2
 
   # Internal version: 3.3.0
   # https://github.com/ethantw/Han
